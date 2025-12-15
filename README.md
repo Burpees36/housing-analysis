@@ -66,7 +66,7 @@ An interaction-based logistic regression model was recommended as the final mode
 ## Full Analysis Report
 
 👉 Interactive HTML report:
-https://YOUR-USERNAME.github.io/heart-disease-risk-modeling/
+https://Burpees36.github.io/heart-disease-risk-modeling/
 
 ## Tools Used
 
