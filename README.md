@@ -1,44 +1,81 @@
-# Housing Price Regression Analysis (R)
+# Heart Disease Risk Analysis
+## Project Summary
 
-This project analyzes housing prices using a structured regression workflow in **R** within a **Jupyter Notebook**. The goal is to understand which housing characteristics are most strongly associated with price and to compare multiple regression specifications to improve model fit and interpretability.
+This project analyzes a historical heart disease dataset to identify clinically significant risk factors and evaluate predictive models for heart disease. The analysis focuses on statistical rigor, interpretability, and model validation, comparing logistic regression models with random forest approaches.
 
-## Project Highlights
-- Built and compared multiple regression models:
-  - **Model 1:** Baseline multiple linear regression
-  - **Model 2:** Interaction model to test whether effects change under different conditions
-  - **Model 3:** Quadratic model to capture potential nonlinear relationships
-- Evaluated models using:
-  - **Adjusted R²**
-  - **Residual Standard Error (RSE)**
-  - **Nested F-tests** (ANOVA comparison for nested models)
-- Reviewed diagnostic plots to assess key regression assumptions (residual patterns, normality, outliers/influence)
+A complete, reproducible statistical report is provided as a rendered HTML document.
 
-## Deliverables
-- `housing_analysis.html`: Rendered report view of the notebook (recommended for recruiters)
+## Objectives
 
-## Tools / Environment
-- R in a Jupyter Notebook environment
-- Base R modeling functions (e.g., `lm()`, `anova()`, `summary()`)
+Identify variables significantly associated with heart disease
 
-## How to View
-### Option 1: View the HTML report
-Open `housing_analysis.html` in a browser.
+Build and compare multiple predictive models
 
-## Methods Overview
-1. Data review and exploratory analysis (EDA)
-2. Fit baseline linear regression (Model 1)
-3. Add interaction terms to test conditional effects (Model 2)
-4. Add quadratic terms to model nonlinearity (Model 3)
-5. Compare models with adjusted R², RSE, and nested F-tests
-6. Validate assumptions using diagnostic plots
+Validate model assumptions and goodness-of-fit
 
-## Key Takeaways (High Level)
-- Housing price generally increases with living area, though the relationship may not be perfectly linear.
-- Model extensions (interactions and quadratic terms) can improve fit, but must be justified by both metrics and interpretability.
-- Nested F-tests provide evidence when a more complex model significantly improves upon a simpler baseline model.
+Evaluate classification and regression performance
 
-## Notes
-- If a dataset file is not included in this repo, it was omitted due to licensing or course constraints. The notebook/report documents the variables and workflow used.
+Communicate results in an interpretable, real-world context
 
-## Author
-Hunter Brashears
+## Data Overview
+
+Observations: 303
+
+Variables: 14 clinical predictors + binary target
+
+Target: Presence of heart disease (yes/no)
+
+Key predictors include age, chest pain type, resting blood pressure, maximum heart rate, exercise-induced angina, cholesterol, ECG results, and number of major vessels.
+
+## Models & Methods
+
+Logistic Regression (baseline model)
+
+Logistic Regression with interaction terms
+
+Random Forest Classification
+
+Random Forest Regression
+
+Model validation and evaluation included:
+
+Wald tests
+
+Hosmer–Lemeshow goodness-of-fit
+
+Confusion matrices
+
+ROC curves and AUC
+
+RMSE (regression model)
+
+## Key Results
+
+Logistic regression models achieved an AUC of approximately 0.80
+
+Chest pain type, maximum heart rate, resting blood pressure, and exercise-induced angina were statistically significant predictors
+
+The interaction-based logistic regression model provided the best balance of performance and interpretability
+
+Random forest classification showed strong training performance but weaker generalization on test data, indicating potential overfitting
+
+## Conclusion
+
+An interaction-based logistic regression model was recommended as the final model due to its strong predictive performance, statistical validity, and interpretability. The analysis demonstrates how statistically grounded models can be effectively applied to healthcare risk prediction while maintaining transparency and clinical relevance.
+
+## Full Analysis Report
+
+👉 Interactive HTML report:
+https://YOUR-USERNAME.github.io/heart-disease-risk-modeling/
+
+## Tools Used
+
+R
+
+Logistic Regression
+
+Random Forest
+
+Statistical Hypothesis Testing
+
+ROC & Confusion Matrix Analysis
