@@ -5,6 +5,11 @@ This project analyzes a historical heart disease dataset to identify clinically 
 
 A complete, reproducible statistical report is provided as a rendered HTML document.
 
+## Full Analysis Report
+
+Interactive HTML report:
+https://Burpees36.github.io/heart-disease-risk-modeling/
+
 ## Objectives
 
 Identify variables significantly associated with heart disease
@@ -63,10 +68,6 @@ Random forest classification showed strong training performance but weaker gener
 
 An interaction-based logistic regression model was recommended as the final model due to its strong predictive performance, statistical validity, and interpretability. The analysis demonstrates how statistically grounded models can be effectively applied to healthcare risk prediction while maintaining transparency and clinical relevance.
 
-## Full Analysis Report
-
-👉 Interactive HTML report:
-https://Burpees36.github.io/heart-disease-risk-modeling/
 
 ## Tools Used
 
