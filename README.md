@@ -2,6 +2,10 @@
 
 This project analyzes housing prices using a structured regression workflow in **R** within a **Jupyter Notebook**. The goal is to understand which housing characteristics are most strongly associated with price and to compare multiple regression specifications to improve model fit and interpretability.
 
+## Full Statistical Report
+View the complete rendered analysis here: 
+https://burpees36.github.io/housing-analysis/
+
 ## Project Highlights
 - Built and compared multiple regression models:
   - **Model 1:** Baseline multiple linear regression
@@ -13,8 +17,6 @@ This project analyzes housing prices using a structured regression workflow in *
   - **Nested F-tests** (ANOVA comparison for nested models)
 - Reviewed diagnostic plots to assess key regression assumptions (residual patterns, normality, outliers/influence)
 
-## Deliverables
-- `index.html`: Rendered report view of the notebook (recommended for recruiters)
 
 ## Tools / Environment
 - R in a Jupyter Notebook environment
